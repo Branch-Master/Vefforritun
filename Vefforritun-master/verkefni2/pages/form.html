@@ -2,23 +2,143 @@
  <html lang ="is">
     <head>
          <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
          <title>Form</title>
          <style>
-         body{background-color:#81D4F2; }
+            *{
+                box-sizing: border-box;
+            }
+            html{
+                height: 100%;
+            }
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                height:100%;
+            }
+
+            header{
+                background-color: blue;
+                padding:30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+                height:15%;
+                
+                
+            }
+            form{
+                float:left;
+                padding: 20px;
+                width: 75%;
+                height: 85%;
+                background-color:whitesmoke; 
+            }
+            button{
+                background-color: blue;
+                font-size: 16px;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding:10px;
+
+            }
+            .haegri{
+                float:right;
+            }
          </style>
     </head> 
     <body> 
-        <h1>form</h1>
+        <header > 
+           Form 
+        </header>
+        
+            <form>
+                <fieldset>
+                    <legend>
+                        Notandaupplýsingum
+                    </legend><br/>
+                    
+                    <label>Notendanafn:
+                        <input type="username" required>
+                    </label><br/><br/>
+                    
+                    
+                    <label>Netfang:
+                        <input type="email" required placeholder="jon@dæmi.is">
+                    </label><br/><br/>
+                    
+                    
 
-        <form method="get" action=".">
-            <div class="field">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
+                    <label>Lykilorð:       
+                        <input type="password" id="password1" name="password" required>
+                    </label><br/><br/>
+                        
+                    
+                    <label >Endurtaktu lykilorð:
+                        <input type="password" id="password2" name="password" required>
+                    </label><br/><br/>
+                        
+                    <fieldset>
+                        <legend>
+                             Ath.
+                        </legend>
+                         Lykilorð þurfa að vera eins
+                    </fieldset>
+                    <br/>
+                        
+                    <label for="kyn">Kyn?</label>
+                    <br/>
+                    <label> 
+                         <input type=radio value="Karl" name="kyn">
+                         Karl
+                    </label>
+                    <label>
+                        <input type=radio value="Kona" name="kyn">
+                        Kona
+                    </label>
+                    <label>
+                         <input type=radio value="Annað" name="kyn">
+                         Annað
+                    </label>
+                    <br/><br/>
 
-        </form>
+                    <label for="aldur">Aldur?</label>
+                    <select name="aldur">
+                            <option value="" selected disabled hidden>Veldu aldur</option>
+                            <option >Yngri en 13 ára</option>
+                            <option >13-20 ára</option>
+                            <option >21-65 ára</option>
+                            <option >Eldri en 65 ára</option>
+                    </select>
+                    <br/><br/>
+                    <label>
+                        Athugasemdir
+                        <br/>
+                        <textarea name="comment" cols="40" rows="5"></textarea>
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" checked>
+                        Senda afrit af notandaupplýsingum á netfang.
+                    </label>
+                    <br/><br/>
+                    
+                    <input type="submit" value="Senda" >
+                        
+                    
 
-        <a href="../forsíða.html">aftur að forsíðu</a>
+                 </fieldset>
+                 <br/>
+
+                 <button onclick="window.location.href='../forsíða.html'">Aftur á forsíðu</button>
+                
+                
+            </form>
+
+
+        
+
+        
         
     </body>
 

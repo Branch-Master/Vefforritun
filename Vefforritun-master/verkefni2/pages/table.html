@@ -4,35 +4,134 @@
          <meta charset="utf-8">
          <title>tafla</title>
          <style>
-         body{background-color:#81D4F2; }
+              *{
+                box-sizing: border-box;
+            }
+            html{
+                height: 100%;
+            }
+             body{
+                font-family:Arial, Helvetica, sans-serif;
+                height:100%;
+            }
+            header{
+                background-color: blue;
+                padding:30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+                height:15%;    
+            }
+            table{
+                padding:30px;
+                border-collapse: collapse;
+                width:80%;
+            }
+            th{
+                height: 50px;
+                background-color: blue;
+                font-size: 16px;
+                color: white;
+
+            }
+            button{
+                background-color: blue;
+                font-size: 16px;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding:10px;
+
+            }
+            .haegri{
+                float:right;
+            }
+
+        
          </style>
     </head> 
     <body> 
-        <center>
-        <h1>tafla</h1>
+        
+        <header>Tafla</header>
+        <br/>
         <table border ="1">
             <thead>
                 <tr>
-                    <th>tegund</th>
-                    <th>framleiðandi</th>
-                    <th>árgerð</th>
-                    <th>verð</th>
+                    <th>Titill</th>
+                    <th>Ár</th>
+                    <th>Sæti</th>
+                    <th>Einkunn</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Corolla</td>
-                    <td>Toyota</td>
-                    <td>2006</td>
-                    <td>1.000.000kr.</td>
+                    <td>The Shawshank Redemption</td>
+                    <td>1994</td>
+                    <td>1.</td>
+                    <td>9,2</td>
                 </tr>
+                <tr>
+                   <td>The Godfather</td>
+                   <td>1972</td>
+                   <td>2.</td>
+                   <td>9,2</td>
+                </tr>
+                <tr>
+                    <td>The Godfather 2</td>
+                    <td>1974</td>
+                    <td>3.</td>
+                    <td>9,0</td>
+                </tr>
+                <tr>
+                    <td>The Dark Knight</td>
+                    <td>2008</td>
+                    <td>4.</td>
+                    <td>9,0</td>
+                </tr>
+                <tr>
+                    <td>12 Angry Men</td>
+                    <td>1957</td>
+                    <td>5.</td>
+                    <td>8,9</td>
+                </tr>
+                <tr>
+                    <td>Schindler's List</td>
+                    <td>1993</td>
+                    <td>6.</td>
+                    <td>8,9</td>
+                </tr>
+                <tr>
+                    <td>The Lord of the Rings: The Return of the King</td>
+                    <td>2003</td>
+                    <td>7.</td>
+                    <td>8,9</td>
+                </tr>
+                <tr>
+                    <td>Pulp Fiction</td>
+                    <td>1994</td>
+                    <td>8.</td>
+                    <td>8,9</td>
+                </tr>
+                <tr>
+                    <td>The Good, the Bad and the Ugly</td>
+                    <td>1966</td>
+                    <td>9.</td>
+                    <td>8,8</td>
+                </tr>
+                <tr>
+                    <td>Fight Club</td>
+                    <td>1999</td>
+                    <td>10.</td>
+                    <td>8,8</td>
+                </tr>
+
             </tbody>
         </table>
         <br/>
 
-
-        <a href="../forsíða.html">aftur að forsíðu</a>
-        </center>
+        <button onclick="window.location.href='../forsíða.html'">Aftur á forsíðu</button>
+        
+        
     </body>
 
 
