@@ -66,14 +66,17 @@
             li a:hover{
                 background-color:blue;
             }
-            
+            .nobord{
+                border:0;
+            }
+
          </style>
     </head> 
     <body> 
         <header > 
            Form 
         </header>
-        
+        <h1>fylltu út í formið</h1>
             <form>
                 <fieldset>
                     <legend>
@@ -81,7 +84,7 @@
                     </legend><br/>
                     
                     <label>Notendanafn:
-                        <input type="username" required>
+                        <input type="text" required>
                     </label><br/><br/>
                     
                     
@@ -110,31 +113,31 @@
                 </fieldset>
                 <fieldset>  
                     <legend> Spurningar</legend>      
-                    <label for="kyn">Kyn?</label>
-                    <br/>
-                    <label> 
-                         <input type=radio value="Karl" name="kyn">
-                         Karl
-                    </label>
-                    <label>
-                        <input type=radio value="Kona" name="kyn">
-                        Kona
-                    </label>
-                    <label>
-                         <input type=radio value="Annað" name="kyn">
-                         Annað
-                    </label>
-                    <br/><br/>
-
-                    <label for="aldur">Aldur?</label>
-                    <select name="aldur">
-                            <option value="" selected disabled hidden>Veldu aldur</option>
+                    
+                        
+                    <fieldset class="nobord">
+                        <legend>Kyn:</legend>
+                    
+                    <label for="karl">Karl</label>
+                         <input type=radio id="karl" name="kyn">
+                    <label for="kona">Kona</label>
+                        <input type=radio id="kona" name="kyn">
+                    <label for="annað">Annað</label>
+                         <input type=radio id="annað" name="kyn">
+                    </fieldset>
+                
+                    <fieldset class="nobord">
+                        <legend>Aldur:</legend>
+                        <select name="aldur" id="aldur">
+                            <option value="Veldu" selected disabled hidden>Veldu aldur</option>
                             <option >Yngri en 13 ára</option>
                             <option >13-20 ára</option>
                             <option >21-65 ára</option>
                             <option >Eldri en 65 ára</option>
                     </select>
-                    <br/><br/>
+                    </fieldset>
+                    
+                    <br/>
                     <label>
                         Athugasemdir
                         <br/>
