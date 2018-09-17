@@ -1,21 +1,140 @@
 /* almennar skilgreiningar */
 
 html {
-
+ font-size: 18px;
 }
 
-/* texti */
 
+/* texti */
+h1{
+    margin-bottom: 2em;
+    font-size: 2em;
+    border-bottom: 1px solid #999;
+}
+h2{
+    margin:0;
+    font-size:1.6667em;
+    color:#999;
+}
+.card-section h2{
+    color:white;
+}
+h3{
+    margin:0;
+    font-size:1em;
+}
+
+.card-text p::first-line{
+    background-color: #ccc;
+}
+.card-text p+p::first-line{
+    background-color: #ddd;
+}
+.card-text p+p+p::first-line{
+    background-color: #eee;
+}
+
+.card-text p::first-letter{
+    font-size:2em;
+}
+.card-text p + p {
+    margin-left: 2.777em;
+    font-size: 0.8889em;
+}
+
+.card-text p + p + p{
+    margin-left:5.555em;
+    font-size: 0.7778em;
+} 
 
 /* cards */
 .card-section{
-
+    margin:auto;
+    width: 80%;
 }
+.cards{
+    padding : 0.5em;
+    background-color: white;
+    max-width: 37em;
+}
+
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
+    display: inline-block;
+    margin:0.5em;
+    padding: 0.5em;
+    width: 10em;
+    height: 10em;
+    border: 1px solid black;
 }
-.card-text{
 
+.card:nth-child(even){
+    background-color: #333;
+    color: #fff;
 }
+.card:nth-child(odd){
+    background-color: #fff;
+    color:#333;
+}
+
+.card-section .cards:hover > .card:nth-child(even){
+    background-color: #fff;
+    color:#333;
+}
+
+.card-section .cards:hover > .card:nth-child(odd){
+    background-color: #333;
+    color:#fff;
+}
+
+
+.card-text button{
+    border:5px;
+    border-style: solid;
+    border-color: #999 #999 #666 #666;
+    padding: 0.5em;
+    font-size: 18px;
+}
+.card-text button:hover{
+    border:10px;
+    border-style: solid;
+    border-color:#666 #666 #999 #999;
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+.card-section button{
+    display: block;
+    margin-top: 2em;
+    margin-bottom:2em;
+    margin-left: auto;
+    margin-right:auto;
+    width:10em;
+    border:5px;
+    border-style: solid;
+    border-color: #999 #999 #666 #666;
+    
+    font-size: 18px;
+    
+}
+.card-section button:hover{
+    display:block;
+    margin-top:2em;
+    margin-bottom:2em;
+    margin-left: auto;
+    margin-right:auto;
+    border:10px;
+    border-style: solid;
+    border-color:#666 #666 #999 #999;
+    
+    font-size: 18px;
+}
+.card-section .cards:after{
+    display: block;
+    content: "Ekki meira efni";
+    border-top: 1px solid #c00;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
