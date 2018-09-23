@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header{
+    display:flex;
+    flex-direction:column;
+    background-image: url(img/trees.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    height:15em;
+    text-align:center;
+    font-size:35px;
+    color: #333;
+    font-family: 'IM Fell DW Pica', serif;
+}
+header h1{
+    max-width: 1120px;
+}
+header h2{
+    max-width: 1120px;
+}
+header p{
+    max-width: 1120px;
+}
+
+blockquote{
+    display: block;
+    text-align: right;
+    margin:20px;
+    font-size: 20px;
+}
+p{
+    max-width: 1400px;
+    float: auto;
+    margin:20px;
+}
+
+hr{
+    background-attachment: fixed;
+    display:block;
+    background-position: 50% 50%;
+    justify-content: center;
+    border:none;
+    height:1064px;
+    background-size: cover;
+    height:60%;
+}
+hr.one{
+    background-image: url(img/tree-fog.jpg);
+}
+hr.two{ 
+    background-image: url(img/castle.jpg);
+}
+hr.three{
+    background-image: url(img/hands.jpg);
+}
+hr.four{
+    background-image: url(img/moon.jpg);
+}
+
+div{
+    padding: 20%;
+}
+
+div::first-letter{
+    -webkit-initial-letter:4;
+            initial-letter:4;
+    font-size: 50px;
+}
+
+html {
+  box-sizing: border-box;
+  height:100%;
+}
+
+body {
+    display:block;
+    justify-content: center;
+  background-color: #333;
+  color: #ddd;
+  height: 100%;
+  font-family: 'Merriweather',serif;
+}
+
+footer{
+    display: flex;
+    background-color: #ddd;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+
+}
