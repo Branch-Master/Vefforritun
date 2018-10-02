@@ -22,17 +22,14 @@
   
   .cards {
     display: flex;
-    
     flex-wrap: wrap;
     justify-content: space-around;
     background-color:#eee;
-    padding: 10px;
     width: 100%;
     height:100%;
   }
 
   .card{
-    
     background-color:#fff;
     margin-bottom: 10px;
     padding: 10px;
@@ -51,7 +48,7 @@
     word-wrap: break-word;
   } 
   
-  .card .content{
+  .card .card__content{
     display:flex;
     flex-direction: row;
     margin-top: 10px;
@@ -59,23 +56,22 @@
     max-height: 185px;
   }
 
-  .card:nth-child(5) > .content .text{
-    height: 210px;
+  .card:nth-child(5) > .card__content{
+    height:240px;
   }
 
-  .card .content .text{
+  .card .card__content .content__text{
     max-width: 470px;
     max-height: 100%;
     overflow: auto;
     margin-right:10px;
-   
   }
    
-  .card .content .text p{ 
+  .card .card__content .content__text p{ 
     overflow-wrap: break-word;
     word-wrap:break-word;
     hyphens:auto;
-    margin:5px;
+    margin-right:10px;
   }
 
   img{
@@ -86,9 +82,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: flex-start;
     list-style-type: none;
     font-weight:bold;
+    margin-top:auto;
   }
   .cards ul li{
     margin: 5px;
